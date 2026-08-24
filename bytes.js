@@ -1,8 +1,19 @@
 // humanBytes(n): format a byte count with 1024-based units (B, KB, MB, GB, TB).
-// BUG: it never advances past KB, so 1 MB shows as "1024 KB" and 1 GB as "1048576 KB".
 function humanBytes(n) {
   if (n < 1024) return `${n} B`;
-  const kb = n / 1024;
-  return `${Number.isInteger(kb) ? kb : kb.toFixed(1)} KB`;
+  if (n < 1024 * 1024) {
+    const kb = n / 1024;
+    return `${Number.isInteger(kb) ? kb : kb.toFixed(1)} KB`;
+  }
+  if (n < 1024 * 1024 * 1024) {
+    const mb = n / (1024 * 1024);
+    return `${Number.isInteger(mb) ? mb : mb.toFixed(1)} MB`;
+  }
+  if (n < 1024 * 1024 * 1024 * 1024) {
+    const gb = n / (1024 * 1024 * 1024);
+    return `${Number.isInteger(gb) ? gb : gb.toFixed(1)} GB`;
+  }
+  const tb = n / (1024 * 1024 * 1024 * 1024);
+  return `${Number.isInteger(tb) ? tb : tb.toFixed(1)} TB`;
 }
 module.exports = { humanBytes };
