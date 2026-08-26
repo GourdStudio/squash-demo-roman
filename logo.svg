@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Squash">
+  <rect width="100" height="100" rx="23" fill="#1B1B23"/>
+  <!-- three commits (bars) collapsing into one merged, green (=paid) node: a squash-merge -->
+  <g fill="#EAC784">
+    <rect x="22" y="30" width="33" height="8" rx="4"/>
+    <rect x="22" y="46" width="22" height="8" rx="4"/>
+    <rect x="22" y="62" width="33" height="8" rx="4"/>
+  </g>
+  <g fill="none" stroke="#EAC784" stroke-width="5" stroke-linecap="round">
+    <path d="M55 34 Q77 34 80 50"/>
+    <path d="M44 50 H74"/>
+    <path d="M55 66 Q77 66 80 50"/>
+  </g>
+  <circle cx="81" cy="50" r="9" fill="#2ECC71"/>
+</svg>

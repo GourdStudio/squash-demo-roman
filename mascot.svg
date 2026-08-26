@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140" role="img" aria-label="Gourd — the Squash mascot, a friendly butternut squash">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2A552"/>
+      <stop offset="1" stop-color="#DE7C20"/>
+    </linearGradient>
+  </defs>
+  <!-- green leaf sprig (the build light) -->
+  <g stroke="#2A323C" stroke-width="3" stroke-linejoin="round">
+    <path d="M60 27 C57 15 48 11 42 14 C47 21 52 25 60 27 Z" fill="#3AA95A"/>
+    <path d="M60 27 C63 15 72 11 78 15 C72 22 67 26 60 27 Z" fill="#49BA69"/>
+  </g>
+  <!-- butternut body -->
+  <path d="M60 24 C70 24 72 34 71 46 C70 62 69 74 74 84 C92 92 96 108 88 122 C80 134 40 134 32 122 C24 108 28 92 46 84 C51 74 50 62 49 46 C48 34 50 24 60 24 Z"
+        fill="url(#body)" stroke="#2A323C" stroke-width="3.5" stroke-linejoin="round"/>
+  <!-- belly / face-plate -->
+  <ellipse cx="60" cy="106" rx="24" ry="21" fill="#FBD9A6" opacity="0.9"/>
+  <!-- eyes -->
+  <circle cx="51" cy="103" r="3.4" fill="#2A323C"/>
+  <circle cx="69" cy="103" r="3.4" fill="#2A323C"/>
+  <circle cx="52.2" cy="101.7" r="1" fill="#fff"/>
+  <circle cx="70.2" cy="101.7" r="1" fill="#fff"/>
+  <!-- confident smirk -->
+  <path d="M53 113 Q60 118 68 112" fill="none" stroke="#2A323C" stroke-width="3" stroke-linecap="round"/>
+  <!-- subtle ribs -->
+  <g stroke="#C96A1C" stroke-width="1.5" opacity="0.5" fill="none" stroke-linecap="round">
+    <path d="M60 41 C60 60 60 78 60 90"/>
+    <path d="M48 88 C46 100 47 116 50 124"/>
+    <path d="M72 88 C74 100 73 116 70 124"/>
+  </g>
+</svg>

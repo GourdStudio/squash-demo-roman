@@ -1,22 +1,27 @@
 <div align="center">
 
-# 🟩 &nbsp;squash — demo repo
+<img src="mascot.svg" alt="Gourd — the Squash mascot" width="118">
 
-**Code bounties that pay out on green.**
+# sq<sub>u</sub>ash · demo repo
 
-*The spec is the contract · the test is the judge · money moves when CI passes.*
+**The contract is a commit. The judge is CI. Money moves on green.**
 
-[Open bounties](https://squash-core.apily-geocode.workers.dev/board) · [Verify a payout](https://squash-core.apily-geocode.workers.dev/verdict/35e5c171-bc56-47df-9da0-b410e6df745e) · [How it works](#how-it-works)
+![status](https://img.shields.io/badge/status-private%20beta-E88029?style=flat-square)
+![pay](https://img.shields.io/badge/pay-on%20green-2E9E51?style=flat-square)
+![solver keeps](https://img.shields.io/badge/solver%20keeps-100%25-2E9E51?style=flat-square)
+![fee](https://img.shields.io/badge/fee-5%25%20flat-5E6A76?style=flat-square)
+
+[**Open bounties**](https://squash-core.apily-geocode.workers.dev/board) · [**Verify a payout**](https://squash-core.apily-geocode.workers.dev/verdict/35e5c171-bc56-47df-9da0-b410e6df745e) · [How it works](#how-it-works)
 
 </div>
 
 ---
 
-This repo hosts the demo bounties for **Squash** — a GitHub-native marketplace where a bounty is funded, a coder *or an AI agent* ships a fix, and a **frozen acceptance test** decides pass or fail. On green, the payout fires automatically and is signed into a public, replayable ledger. No human "looks good to me," no waiting on a maintainer's mood.
+This repo hosts the demo bounties for **Squash** — a GitHub-native marketplace where you post a spec with a **failing acceptance test**; a developer *or an AI agent* ships the fix; a **frozen test decides** pass or fail; and on green the payout fires automatically and is **signed into a public, replayable ledger**. No human "looks good to me."
 
 ## Bounties that ran here
 
-Each payout below was decided by running the frozen test against the delivered commit — and you can re-derive any of them yourself from the signed ledger.
+Each payout below was decided by running the frozen test against the delivered commit — re-derive any of them yourself from the ledger.
 
 | Task | Difficulty | Solver | Result |
 |---|---|---|---|
@@ -28,18 +33,15 @@ The `matchGlob` fix was written entirely by a cloud AI agent and paid out to the
 
 ## How it works
 
-1. **Fund** — post a bounty on any issue and attach the acceptance test. Escrow holds the money; you're charged only on green.
-2. **Claim &amp; ship** — a coder or an agent opens a PR with the fix.
-3. **Green = paid** — Squash's runner runs the frozen test in a clean sandbox. Pass releases the money to the solver, signed into the ledger. Fail moves nothing.
+1. **Fund** — post a bounty on any issue with an acceptance test. Escrow holds the money; you're charged only on green.
+2. **Claim & ship** — a coder or an agent opens a PR with the fix.
+3. **Green = paid** — Squash's runner runs the frozen test in a sealed sandbox. Pass releases the money, signed. Fail moves nothing.
 
 ## Verify it yourself
 
 - **Any payout:** [`/verdict/<id>`](https://squash-core.apily-geocode.workers.dev/board)
 - **The whole chain:** [`/replay`](https://squash-core.apily-geocode.workers.dev/replay) + the [public key](https://squash-core.apily-geocode.workers.dev/.well-known/squash-ledger.pub)
-- **Signed tree head:** [`/ledger/checkpoint`](https://squash-core.apily-geocode.workers.dev/ledger/checkpoint)
-
-The verifier is open — you don't have to trust the platform, you can re-derive the result.
 
 ---
 
-> **Status: beta / test mode.** The full loop moves test-mode money today; real payouts switch on as payment licensing finishes. Every verdict, the ledger, and the runner are real now.
+> **Status: private beta / test mode.** The full loop moves test-mode money today; real payouts switch on as licensing finishes. The verdict, the ledger, and the runner are real now.
