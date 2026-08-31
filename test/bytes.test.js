@@ -7,5 +7,7 @@ test("scales through units", () => {
   assert.strictEqual(humanBytes(1024), "1 KB");
   assert.strictEqual(humanBytes(1536), "1.5 KB");
   assert.strictEqual(humanBytes(1048576), "1 MB");
+  assert.strictEqual(humanBytes(1572864), "1.5 MB");
   assert.strictEqual(humanBytes(1073741824), "1 GB");
+  assert.strictEqual(humanBytes(1099511627776), "1 TB");
 });
